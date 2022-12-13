@@ -1,0 +1,45 @@
+@use "../abstracts/" as *;
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.button {
+  border: none;
+  border-radius: 5rem;
+  padding: 1rem 1.6rem;
+  color: $light-red;
+  background: $white;
+  font-family: $font-family-ubuntu;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+
+  @include on-event {
+    filter: brightness(1.15);
+    transition: $transition;
+  }
+}
+.goust {
+  @extend .button;
+  background: none;
+  border: 2px solid $white;
+  color: $white;
+}
+.btn-text {
+  @extend .button;
+  background: none;
+  color: $very-dark-blue;
+  font-size: 1.125rem;
+  letter-spacing: -1%;
+  @include respond-to("medium") {
+    color: $white;
+  }
+}
+.btn-cta {
+  background: $gradient-intro;
+  color: $white;
+  padding: 1rem 2rem;
+  @include respond-to("medium") {
+    background: $white;
+    color: $light-red;
+  }
+}

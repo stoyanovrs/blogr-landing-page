@@ -1,0 +1,26 @@
+@use "../abstracts/" as *;
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+header {
+  min-height: 37.5rem;
+  background: $gradient-intro;
+  border-bottom-left-radius: 100px;
+}
+.hero {
+  padding: 2rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+  color: $white;
+  h1 {
+    color: $white;
+  }
+  .button-group-hero {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    justify-content: center;
+  }
+}

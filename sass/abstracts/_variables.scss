@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+// Primary
+
+$light-red: hsl(356, 100%, 66%); //CTA text
+$very-light-red: hsl(355, 100%, 74%); // CTA hover background
+$very-dark-blue: hsl(208, 49%, 24%); //headings
+
+// Neutral
+
+$white: hsl(0, 0%, 100%); //Text
+$grayish-blue: hsl(240, 2%, 79%); //footer text
+$drop-bg: hsl(240, 7%, 94%); //drop bg
+$very-dark-grayish-blue: hsl(207, 13%, 34%); //body copy
+$very-dark-black-blue: hsl(240, 10%, 16%); //footer background
+
+// Gradient
+
+//Background gradient - Intro/CTA mobile nav:
+//- Very light red: hsl(13, 100%, 72%)
+//- Light red: hsl(353, 100%, 62%)
+
+$gradient-intro: linear-gradient(
+  180deg,
+  hsl(13, 100%, 72%) 0%,
+  hsl(353, 100%, 62%) 100%
+);
+
+//Background gradient - body:
+//- Very dark gray blue: hsl(237, 17%, 21%)
+//- Very dark desaturated blue: hsl(237, 23%, 32%)
+$gradient-body: linear-gradient(
+  90deg,
+  hsl(237, 17%, 21%) 0%,
+  hsl(237, 23%, 32%) 100%
+);
+
+$font-family-overpass: "Overpass", sans-serif;
+$font-family-ubuntu: "Ubuntu", sans-serif;
+
+$max-width: 1160px !default;
+$radius: 6px;
+$transition: all ease 0.4s;
+
+/// Breakpoints map
+
+$breakpoints: (
+  "small": 320px,
+  "medium": 768px,
+  "large": 1024px,
+) !default;

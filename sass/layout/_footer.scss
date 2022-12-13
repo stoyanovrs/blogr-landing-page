@@ -1,0 +1,45 @@
+@use "../abstracts/" as *;
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+footer {
+  background: $very-dark-black-blue;
+  padding: 4.375rem 0;
+  .flex {
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        font-family: $font-family-ubuntu;
+        font-weight: 400;
+        font-size: 1rem;
+        &:first-child {
+          font-weight: 700;
+          color: $white;
+          margin-bottom: 2.25rem;
+        }
+        a {
+          color: $grayish-blue;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    & > * {
+      width: 100%;
+    }
+    .flogo {
+      img {
+        max-width: 101px;
+      }
+    }
+  }
+  .attribution {
+    text-align: right;
+    font-size: 0.8rem;
+  }
+}

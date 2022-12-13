@@ -1,0 +1,46 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+$roboto-font-path: "../fonts";
+
+@font-face {
+  // This is parsed as a normal function call that takes a quoted string.
+  src: url("#{$roboto-font-path}/Overpass/static/Overpass-Light.ttf")
+    format("truetype");
+  font-family: "Overpass";
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("#{$roboto-font-path}/Overpass/static/Overpass-SemiBold.ttf")
+    format("truetype");
+  font-family: "Overpass";
+  font-weight: 600;
+}
+
+@font-face {
+  // This is parsed as a normal function call that takes a quoted string.
+  src: url("#{$roboto-font-path}/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
+  font-family: "Ubuntu";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("#{$roboto-font-path}/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
+  font-family: "Ubuntu";
+  font-weight: 500;
+}
+@font-face {
+  src: url("#{$roboto-font-path}/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
+  font-family: "Ubuntu";
+  font-weight: 700;
+}
+
+//font-family: 'Overpass', sans-serif;
+
+//Weights: 300, 600
+
+//font-family: 'Ubuntu', sans-serif;
+
+//Weights: 400, 500, 700

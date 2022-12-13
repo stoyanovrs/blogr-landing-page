@@ -1,0 +1,64 @@
+@use "../abstracts/" as *;
+.toggle {
+  display: none;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 4.5rem 0;
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .main-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+    .drop-menu {
+      position: relative;
+      font-family: $font-family-ubuntu;
+      font-weight: 500;
+      color: $white;
+      cursor: pointer;
+      opacity: 0.7;
+      @include on-event {
+        opacity: 1;
+        text-decoration: underline;
+        transition: $transition;
+      }
+      &::after {
+        content: url("../../images/icon-arrow-light.svg");
+        position: absolute;
+        right: -17px;
+      }
+    }
+  }
+  .drop {
+    position: absolute;
+    height: 0;
+    visibility: hidden;
+    opacity: 1;
+    background: $white;
+  }
+  .droped {
+    .drop {
+      display: flex;
+      flex-direction: column;
+      visibility: visible;
+
+      height: auto;
+
+      list-style: none;
+      padding: 2rem 1.5rem;
+      row-gap: 1.375rem;
+      border-radius: $radius;
+      max-width: 10.5rem;
+    }
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+}

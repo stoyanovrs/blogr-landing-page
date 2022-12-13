@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
+    <title>Frontend Mentor | [Blogr]</title>
+  </head>
+  <body>
+    <header>
+      <div class="container flex">
+        <div class="navbar">
+          <a href="#">
+            <img src="./images/logo.svg" alt="Waffle Inc." />
+          </a>
+          <div class="toggle">
+            <img
+              id="open"
+              src="./images/icon-hamburger.svg"
+              alt="mobile-menu"
+            />
+            <img id="close" src="./images/icon-close.svg" alt="" />
+          </div>
+          <nav class="main-nav">
+            <ul class="main-menu">
+              <li class="drop-menu">
+                Products
+                <ul class="drop">
+                  <li><a href="">Overview</a></li>
+                  <li><a href="">Pricing</a></li>
+                  <li><a href="">Marketplace</a></li>
+                  <li><a href="">Features</a></li>
+                  <li><a href="">Integrations</a></li>
+                </ul>
+              </li>
+              <li class="drop-menu">
+                Company
+                <ul class="drop">
+                  <li><a href="">About</a></li>
+                  <li><a href="">Team</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Careers</a></li>
+                </ul>
+              </li>
+
+              <li class="drop-menu">
+                Connect
+                <ul class="drop">
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Newsletter</a></li>
+                  <li><a href="">LinkedIn</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="button-group">
+              <button class="button btn-text">Login</button>
+              <button class="button btn-cta">Sign Up</button>
+            </div>
+          </nav>
+        </div>
+        <section class="hero">
+          <div class="hero-text">
+            <h1>A modern publishing platform</h1>
+            <p class="lead">Grow your audience and build your online brand</p>
+          </div>
+
+          <div class="button-group-hero">
+            <button href="#" class="button">Start for Free</button>
+            <button href="#" class="button goust">Learn More</button>
+          </div>
+        </section>
+      </div>
+      <!-- End Header Container -->
+      <div class="header-bg"></div>
+    </header>
+    <main>
+      <section class="benefits">
+        <div class="container">
+          <h2>Designed for the future</h2>
+          <div class="benefits-flex">
+            <div class="benefits-image">
+              <img
+                class="mobile"
+                src="./images/illustration-editor-mobile.svg"
+                alt="editor"
+              />
+              <!-- <img
+                class="desktop"
+                src="./images/illustration-editor-desktop.svg"
+                alt=""
+              /> -->
+            </div>
+            <div class="benefit-text">
+              <div class="benefits-card">
+                <h3>Introducing an extensible editor</h3>
+                <p>
+                  Blogr features an exceedingly intuitive interface which lets
+                  you focus on one thing: creating content. The editor supports
+                  management of multiple blogs and allows easy manipulation of
+                  embeds such as images, videos, and Markdown. Extensibility
+                  with plugins and themes provide easy ways to add functionality
+                  or change the looks of a blog.
+                </p>
+              </div>
+              <div class="benefits-card">
+                <h3>Robust content management</h3>
+                <p>
+                  Flexible content management enables users to easily move
+                  through posts. Increase the usability of your blog by adding
+                  customized categories, sections, format, or flow. With this
+                  functionality, you’re in full control.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner">
+        <div class="container flex">
+          <div class="banner-image">
+            <!-- <img src="./images/illustration-phones.svg" alt="phones" /> -->
+          </div>
+          <div class="banner-text">
+            <h2>State of the Art Infrastructure</h2>
+            <p>
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </div>
+        </div>
+        <!-- <div class="banner-bg"></div> -->
+      </section>
+      <section class="specs">
+        <div class="container flex">
+          <div class="specs-image">
+            <!-- <img src="./images/illustration-laptop-mobile.svg" alt="" /> -->
+          </div>
+          <div class="specs-text">
+            <div class="specs-text-card">
+              <h3>Free, open, simple</h3>
+              <p>
+                Blogr is a free and open source application backed by a large
+                community of helpful developers. It supports features such as
+                code syntax highlighting, RSS feeds, social media integration,
+                third-party commenting tools, and works seamlessly with Google
+                Analytics. The architecture is clean and is relatively easy to
+                learn.
+              </p>
+            </div>
+            <div class="specs-text-card">
+              <h3>Powerful tooling</h3>
+              <p>
+                Batteries included. We built a simple and straightforward CLI
+                tool that makes customization and deployment a breeze, but
+                capable of producing even the most complicated sites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container flex">
+        <a href="#" class="flogo">
+          <img src="./images/logo.svg" alt="Waffle Inc." />
+        </a>
+        <ul class="products">
+          <li>Products</li>
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Integrations</a></li>
+        </ul>
+        <ul class="company">
+          <li>Company</li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+        <ul class="connect">
+          <li>Connect</li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <div class="attribution">
+        <div class="container">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP"
+            target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://github.com/stoyanovrs">Rumen Stoyanov</a>.
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
