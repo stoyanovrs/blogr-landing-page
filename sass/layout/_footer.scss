@@ -9,6 +9,9 @@ footer {
     display: flex;
     gap: 35px;
     justify-content: space-between;
+    @include respond-to("medium") {
+      flex-direction: column;
+    }
     ul {
       list-style: none;
       padding: 0;
@@ -31,6 +34,9 @@ footer {
     }
     & > * {
       width: 100%;
+      @include respond-to("medium") {
+        text-align: center;
+      }
     }
     .flogo {
       img {

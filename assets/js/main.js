@@ -16,3 +16,16 @@ function dropMenuFunction(e) {
 }
 
 dropToggle.forEach((drop) => drop.addEventListener("click", dropMenuFunction));
+
+window.onclick = function (e) {
+  if (!e.target.matches(".drop-menu")) {
+    var dropdowns = document.getElementsByClassName(".drop");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("droped")) {
+        openDropdown.classList.remove("droped");
+      }
+    }
+  }
+};

@@ -4,6 +4,7 @@
 // -----------------------------------------------------------------------------
 .button {
   border: none;
+  cursor: pointer;
   border-radius: 5rem;
   padding: 1rem 1.6rem;
   color: $light-red;
@@ -23,23 +24,28 @@
   background: none;
   border: 2px solid $white;
   color: $white;
+  @include on-event {
+    background: $white;
+    color: $very-light-red;
+  }
 }
 .btn-text {
   @extend .button;
   background: none;
-  color: $very-dark-blue;
+  color: $white;
   font-size: 1.125rem;
-  letter-spacing: -1%;
-  @include respond-to("medium") {
-    color: $white;
+  letter-spacing: -0.01em;
+  opacity: 0.8;
+  @include on-event {
+    opacity: 1;
   }
 }
 .btn-cta {
-  background: $gradient-intro;
-  color: $white;
+  background: $white;
+  color: $very-light-red;
   padding: 1rem 2rem;
-  @include respond-to("medium") {
-    background: $white;
-    color: $light-red;
+  @include on-event {
+    background: $very-light-red;
+    color: $white;
   }
 }

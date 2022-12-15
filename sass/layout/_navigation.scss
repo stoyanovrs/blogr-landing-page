@@ -1,5 +1,23 @@
 @use "../abstracts/" as *;
-.toggle {
+@include respond-to("medium") {
+  .navbar {
+    position: relative;
+    justify-content: space-between;
+    .toggle {
+      display: block;
+      #close {
+        display: none;
+      }
+    }
+    .main-nav {
+      position: absolute;
+      height: 0;
+      top: 0;
+      visibility: hidden;
+    }
+  }
+}
+toggle {
   display: none;
 }
 .navbar {
@@ -48,14 +66,21 @@
       display: flex;
       flex-direction: column;
       visibility: visible;
-
+      opacity: 1;
       height: auto;
-
       list-style: none;
       padding: 2rem 1.5rem;
       row-gap: 1.375rem;
       border-radius: $radius;
       max-width: 10.5rem;
+      li {
+        a {
+          color: $very-dark-blue;
+          @include on-event {
+            font-weight: 700;
+          }
+        }
+      }
     }
     &::after {
       transform: rotate(180deg);

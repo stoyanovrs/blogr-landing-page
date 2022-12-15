@@ -6,6 +6,31 @@ header {
   min-height: 37.5rem;
   background: $gradient-intro;
   border-bottom-left-radius: 100px;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    background: url("../../images/bg-pattern-intro-desktop.svg") no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 220%;
+    background-position: -28rem -81rem;
+    z-index: -1;
+  }
+  @include respond-to("medium") {
+    &::after {
+      background: url("../../images/bg-pattern-intro-mobile.svg") no-repeat;
+      background-size: 431%;
+      background-position: -30rem -21rem;
+    }
+    .hero {
+      padding: 0;
+    }
+  }
 }
 .hero {
   padding: 2rem 0;

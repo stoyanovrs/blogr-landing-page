@@ -17,6 +17,9 @@
     position: absolute;
     z-index: -1;
     background-position: 5rem 0rem;
+    @include respond-to("medium") {
+      display: none;
+    }
   }
   .container {
     margin-top: 6.75rem;
@@ -34,6 +37,12 @@
   }
   .benefit-text {
     flex: 1;
+  }
+  @include respond-to("medium") {
+    .benefits-flex {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 }
 //===  END BENEFITS === //
@@ -58,21 +67,35 @@
   .flex {
     display: flex;
     text-align: center;
-    padding: 8rem 0;
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+
     gap: 1rem;
     .banner-image {
       flex: 1;
       position: relative;
-      z-index: 1;
+      z-index: 0;
+      // .phones {
+      //   position: absolute;
+      //   left: 0;
+      //   top: -16rem;
+      // }
       &::after {
         content: "";
         background: url("../../images/illustration-phones.svg") no-repeat;
         width: 100%;
-        height: 315%;
+        height: 272%;
         position: absolute;
-        left: -17px;
-        top: -12rem;
-        z-index: -1;
+        background-size: 100%;
+        left: -2rem;
+        top: -10rem;
+        z-index: 1;
+      }
+      @include respond-to("medium") {
+        height: 15rem;
+        &::after {
+          bottom: 0;
+        }
       }
     }
     .banner-text {
@@ -84,6 +107,21 @@
       }
       p {
         color: $white;
+      }
+    }
+  }
+  @include respond-to("medium") {
+    min-height: 39.12rem;
+
+    .flex {
+      flex-direction: column;
+      margin: 5rem 0;
+      .banner-image {
+        height: 10vh;
+        flex: auto;
+      }
+      .banner-text {
+        flex: auto;
       }
     }
   }
@@ -103,16 +141,28 @@
     height: 100%;
     background-position: -17rem 9rem;
     background-size: 66%;
+    @include respond-to("medium") {
+      display: none;
+    }
   }
   .flex {
     display: flex;
     gap: 1rem;
-    padding: 18rem 0px;
+    padding-top: 18rem;
+    padding-bottom: 18rem;
     .specs-image {
       flex: 1;
     }
     .specs-text {
       flex: 1;
+    }
+  }
+  @include respond-to("medium") {
+    .flex {
+      flex-direction: column;
+      text-align: center;
+      padding-top: 5rem;
+      padding-bottom: 8rem;
     }
   }
 }

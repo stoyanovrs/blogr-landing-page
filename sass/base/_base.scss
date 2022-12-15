@@ -38,14 +38,11 @@ a {
     transition: $transition;
   }
 }
-.desktop {
+.mobile {
   display: none;
 }
 @include respond-to("medium") {
-  .desktop {
-    display: block;
-  }
   .mobile {
-    display: none;
+    display: block;
   }
 }
